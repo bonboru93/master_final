@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/contractAddr_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Contract Address"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contractAddr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/contractAddr_hint" />
+
+    <TextView
+        android:id="@+id/deviceAddr_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Device Address"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/contractAddr" />
+
+    <TextView
+        android:id="@+id/deviceAddr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/deviceAddr_hint" />
+
+    <TextView
+        android:id="@+id/nonce_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nonce"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/deviceAddr" />
+
+    <TextView
+        android:id="@+id/nonce"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/nonce_hint" />
+
+    <TextView
+        android:id="@+id/length_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Length"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/nonce" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/length_hint" />
+
+    <TextView
+        android:id="@+id/signature_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Signature"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/length" />
+
+    <TextView
+        android:id="@+id/signature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:lines="3"
+        app:layout_constraintEnd_toEndOf="@id/contractAddr_hint"
+        app:layout_constraintStart_toStartOf="@id/contractAddr_hint"
+        app:layout_constraintTop_toBottomOf="@id/signature_hint" />
+
+</android.support.constraint.ConstraintLayout>

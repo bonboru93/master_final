@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NodeFragment">
+
+    <TextView
+        android:id="@+id/offline_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="OFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/onoff"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Switch
+        android:id="@+id/onoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/offline_hint"
+        app:layout_constraintEnd_toStartOf="@id/online_hint"/>
+
+    <TextView
+        android:id="@+id/online_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="ON"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/onoff"
+        app:layout_constraintTop_toTopOf="@id/offline_hint" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offline_hint" />
+
+    <TextView
+        android:id="@+id/client_hint"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Client"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/client"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:lines="1"
+        android:text="IDLE"
+        app:layout_constraintEnd_toEndOf="@id/client_hint"
+        app:layout_constraintStart_toStartOf="@id/client_hint"
+        app:layout_constraintTop_toBottomOf="@id/client_hint" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/client" />
+
+
+    <TextView
+        android:id="@+id/enode_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enode"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/client_hint"
+        app:layout_constraintStart_toStartOf="@id/client_hint"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/enode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:lines="5"
+        android:text="IDLE"
+        app:layout_constraintEnd_toEndOf="@id/client_hint"
+        app:layout_constraintStart_toStartOf="@id/client_hint"
+        app:layout_constraintTop_toBottomOf="@id/enode_hint" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enode" />
+
+    <TextView
+        android:id="@+id/latestBlock_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Latest Block"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/client_hint"
+        app:layout_constraintStart_toStartOf="@id/client_hint"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <TextView
+        android:id="@+id/latestBlock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="IDLE"
+        app:layout_constraintEnd_toEndOf="@id/client_hint"
+        app:layout_constraintStart_toStartOf="@id/client_hint"
+        app:layout_constraintTop_toBottomOf="@id/latestBlock_hint" />
+
+</android.support.constraint.ConstraintLayout>
